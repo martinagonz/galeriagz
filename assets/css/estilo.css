@@ -1,0 +1,310 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Estilos del menú */
+#menu a, button {
+    font-size: 16px !important;
+    font-weight: 600;
+    color: #3f3f3f;
+}
+
+.navbar-brand img {
+    width: 20%; /* Ajusta el tamaño del logotipo */
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    #menu a, button {
+        font-size: 14px !important; /* Reduce el tamaño del texto del menú en pantallas pequeñas */
+    }
+
+    .navbar-brand img {
+        width: 15%; /* Reduce el tamaño del logotipo en pantallas pequeñas */
+    }
+
+    .card {
+        margin-top: 2rem; /* Espacio superior en pantallas pequeñas */
+    }
+
+    .logo {
+        width: 50%;
+    }
+}
+
+/* Estilos del slider de imágenes */
+.carousel-inner {
+    max-height: 39rem !important;
+}
+
+/* Estilos de la sección de nuestro equipo */
+#img-equipo {
+    max-height: 30rem !important;
+    width: 50%;
+}
+
+/* Estilos de la sección de nuestro equipo con mapa */
+#local {
+    margin-top: 50px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 300px;
+}
+
+.mapa-container {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    position: relative;
+}
+
+.mapa-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-local {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-local .mapa {
+    flex: 1;
+    margin-right: 30px; /* Espacio entre el mapa y el texto */
+}
+
+.wrapper-local .texto {
+    flex: 2;
+}
+
+#numeros-local {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#numeros-local div {
+    padding: 0 20px 0 0;
+    text-align: left;
+    height: 48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child) {
+    padding-left: 20px;
+}
+
+#numeros-local p {
+    margin: 0;
+}
+
+/* Estilos del fondo de la sección de contacto */
+#bg-contactos {
+    position: relative;
+    top: -130px;
+}
+
+#seccion-contacto {
+    background-color: #1b2a4e;
+    min-height: 500px;
+    position: relative;
+}
+
+/* Estilo para el mensaje de confirmación */
+.mensaje-enviado {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    display: none; /* Ocultar el mensaje inicialmente */
+}
+
+/* Estilos del formulario de contacto */
+#contenedor-formulario {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius: 5px;
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    #intro,
+    #equipo {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #intro,
+    #equipo {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    #img-equipo {
+        max-height: 20rem !important;
+        width: 90%;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #local {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    #vehiculos,
+    #servicios-fila-2 {
+        flex-wrap: wrap;
+    }
+
+    .icono-wrap {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #intro,
+    #equipo {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    #img-equipo {
+        max-height: 18rem !important;
+        width: 90%;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #contenedor-formulario {
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 320px) {
+    #intro h1 {
+        font-size: 1.5rem;
+    }
+
+    #intro p {
+        font-size: 1rem;
+    }
+
+    .fs-5 {
+        font-size: 0.9rem !important;
+    }
+
+    .wrapper-local {
+        padding-top: 50px;
+    }
+
+    #contenedor-formulario {
+        width: 95% !important;
+    }
+}
+
+/* Estilos del formulario de inicio de sesión */
+#form-inicio-sesion {
+    margin-top: 2rem;
+}
+
+/* Estilos del mensaje de inicio de sesión */
+#mensaje-inicio-sesion {
+    margin-top: 1rem;
+}
+
+/* Estilos para las tarjetas de obra */
+.card {
+    height: 100%;
+    display: flex; /* Usar flexbox para alinear contenido verticalmente */
+    flex-direction: column; /* Alinear contenido verticalmente */
+    justify-content: space-between; /* Distribuir espacio verticalmente */
+}
+
+.card-img-top {
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Escalar las imágenes para llenar el contenedor */
+}
+
+.card-body {
+    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca */
+    padding: 1rem; /* Ajustar el padding */
+}
+
+.card-title {
+    font-size: 1.2rem; /* Tamaño de fuente para el título */
+}
+
+.card-text {
+    font-size: 1rem; /* Tamaño de fuente para el texto */
+}
+
+.card-price {
+    margin-top: auto; /* Mover el precio hacia la parte inferior */
+    font-size: 1rem; /* Tamaño de fuente para el precio */
+}
+
+/* Estilos para los botones de las tarjetas de obra */
+.card-body .btn {
+    font-size: 1rem; /* Tamaño de fuente para los botones */
+    padding: 8px 16px; /* Ajustar el padding de los botones */
+}
+
+/* Estilos adicionales personalizados */
+
+/* Estilos para la tarjeta de inicio de sesión */
+.card {
+    border-radius: 20px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card-title {
+    color: #dc3545; /* Color de título similar al de otras páginas */
+}
+
